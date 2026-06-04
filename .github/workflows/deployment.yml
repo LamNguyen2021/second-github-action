@@ -15,6 +15,7 @@ jobs:
       - name: Run tests
         run: npm run test
   deploy:
+    needs: test
     runs-on: ubutu-latest
     steps:
       - name: Get code
